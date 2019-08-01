@@ -1,5 +1,5 @@
-module ImageCon {
-    umbrella "../ImageCon/include/"
+module ComponentsObjC {
+    umbrella "../Components/include/"
     export *
 }
 

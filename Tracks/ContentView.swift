@@ -8,7 +8,7 @@
 
 import SwiftUI
 import Components
-import ImageCon
+import ComponentsObjC
 
 struct ContentView : View {
     let image = ("A" as NSString).image(attributes: [.font: UIFont.systemFont(ofSize: 20)], size: CGSize(width: 16, height: 16)) 

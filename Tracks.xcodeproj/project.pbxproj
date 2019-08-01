@@ -13,15 +13,11 @@
 		1655C8F422EF15D80045B9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1655C8F322EF15D80045B9A0 /* Assets.xcassets */; };
 		1655C8F722EF15D80045B9A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1655C8F622EF15D80045B9A0 /* Preview Assets.xcassets */; };
 		1655C8FA22EF15D80045B9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1655C8F822EF15D80045B9A0 /* LaunchScreen.storyboard */; };
-		1655C90922EF15FA0045B9A0 /* ImageCon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655C90822EF15FA0045B9A0 /* ImageCon.m */; };
-		1655C90A22EF15FA0045B9A0 /* ImageCon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1655C90722EF15FA0045B9A0 /* ImageCon.h */; };
 		1655C91722EF16520045B9A0 /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655C91522EF16520045B9A0 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1655C91A22EF16520045B9A0 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1655C91322EF16520045B9A0 /* Components.framework */; };
 		1655C91B22EF16520045B9A0 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1655C91322EF16520045B9A0 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1655C92122EF16720045B9A0 /* TrackRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655C92022EF16720045B9A0 /* TrackRowCell.swift */; };
-		1655C92722EF26DE0045B9A0 /* NSString+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655C92622EF26DE0045B9A0 /* NSString+Image.m */; };
-		1655C92922EF2CAD0045B9A0 /* libImageCon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1655C90522EF15FA0045B9A0 /* libImageCon.a */; };
-		1655C92C22EF2CD10045B9A0 /* NSString+Image.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1655C92522EF26DE0045B9A0 /* NSString+Image.h */; };
+		16FCCF6522F31566000CD4DD /* NSString+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655C92622EF26DE0045B9A0 /* NSString+Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,27 +28,9 @@
 			remoteGlobalIDString = 1655C91222EF16520045B9A0;
 			remoteInfo = Components;
 		};
-		1655C92A22EF2CAD0045B9A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1655C8E222EF15D70045B9A0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1655C90422EF15FA0045B9A0;
-			remoteInfo = ImageCon;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1655C90322EF15FA0045B9A0 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				1655C92C22EF2CD10045B9A0 /* NSString+Image.h in CopyFiles */,
-				1655C90A22EF15FA0045B9A0 /* ImageCon.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1655C91F22EF16520045B9A0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,9 +53,6 @@
 		1655C8F622EF15D80045B9A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1655C8F922EF15D80045B9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1655C8FB22EF15D80045B9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1655C90522EF15FA0045B9A0 /* libImageCon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageCon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1655C90722EF15FA0045B9A0 /* ImageCon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCon.h; sourceTree = "<group>"; };
-		1655C90822EF15FA0045B9A0 /* ImageCon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCon.m; sourceTree = "<group>"; };
 		1655C91322EF16520045B9A0 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1655C91522EF16520045B9A0 /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		1655C91622EF16520045B9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,15 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1655C92922EF2CAD0045B9A0 /* libImageCon.a in Frameworks */,
 				1655C91A22EF16520045B9A0 /* Components.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1655C90222EF15FA0045B9A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +86,6 @@
 			children = (
 				1655C92E22EF2CF90045B9A0 /* Wrapper */,
 				1655C8EC22EF15D70045B9A0 /* Tracks */,
-				1655C90622EF15FA0045B9A0 /* ImageCon */,
 				1655C91422EF16520045B9A0 /* Components */,
 				1655C8EB22EF15D70045B9A0 /* Products */,
 				1655C92822EF2CAD0045B9A0 /* Frameworks */,
@@ -130,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				1655C8EA22EF15D70045B9A0 /* Tracks.app */,
-				1655C90522EF15FA0045B9A0 /* libImageCon.a */,
 				1655C91322EF16520045B9A0 /* Components.framework */,
 			);
 			name = Products;
@@ -158,19 +123,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1655C90622EF15FA0045B9A0 /* ImageCon */ = {
-			isa = PBXGroup;
-			children = (
-				1655C93022EF2F9B0045B9A0 /* include */,
-				1655C90822EF15FA0045B9A0 /* ImageCon.m */,
-				1655C92622EF26DE0045B9A0 /* NSString+Image.m */,
-			);
-			path = ImageCon;
-			sourceTree = "<group>";
-		};
 		1655C91422EF16520045B9A0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1655C93022EF2F9B0045B9A0 /* include */,
+				1655C92622EF26DE0045B9A0 /* NSString+Image.m */,
 				1655C91522EF16520045B9A0 /* Components.h */,
 				1655C91622EF16520045B9A0 /* Info.plist */,
 				1655C92022EF16720045B9A0 /* TrackRowCell.swift */,
@@ -196,7 +153,6 @@
 		1655C93022EF2F9B0045B9A0 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				1655C90722EF15FA0045B9A0 /* ImageCon.h */,
 				1655C92522EF26DE0045B9A0 /* NSString+Image.h */,
 			);
 			path = include;
@@ -229,29 +185,11 @@
 			);
 			dependencies = (
 				1655C91922EF16520045B9A0 /* PBXTargetDependency */,
-				1655C92B22EF2CAD0045B9A0 /* PBXTargetDependency */,
 			);
 			name = Tracks;
 			productName = Tracks;
 			productReference = 1655C8EA22EF15D70045B9A0 /* Tracks.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1655C90422EF15FA0045B9A0 /* ImageCon */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1655C90B22EF15FA0045B9A0 /* Build configuration list for PBXNativeTarget "ImageCon" */;
-			buildPhases = (
-				1655C90122EF15FA0045B9A0 /* Sources */,
-				1655C90222EF15FA0045B9A0 /* Frameworks */,
-				1655C90322EF15FA0045B9A0 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ImageCon;
-			productName = ImageCon;
-			productReference = 1655C90522EF15FA0045B9A0 /* libImageCon.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 		1655C91222EF16520045B9A0 /* Components */ = {
 			isa = PBXNativeTarget;
@@ -284,9 +222,6 @@
 					1655C8E922EF15D70045B9A0 = {
 						CreatedOnToolsVersion = 11.0;
 					};
-					1655C90422EF15FA0045B9A0 = {
-						CreatedOnToolsVersion = 11.0;
-					};
 					1655C91222EF16520045B9A0 = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
@@ -307,7 +242,6 @@
 			projectRoot = "";
 			targets = (
 				1655C8E922EF15D70045B9A0 /* Tracks */,
-				1655C90422EF15FA0045B9A0 /* ImageCon */,
 				1655C91222EF16520045B9A0 /* Components */,
 			);
 		};
@@ -344,20 +278,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1655C90122EF15FA0045B9A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1655C90922EF15FA0045B9A0 /* ImageCon.m in Sources */,
-				1655C92722EF26DE0045B9A0 /* NSString+Image.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1655C90F22EF16520045B9A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1655C92122EF16720045B9A0 /* TrackRowCell.swift in Sources */,
+				16FCCF6522F31566000CD4DD /* NSString+Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,11 +294,6 @@
 			isa = PBXTargetDependency;
 			target = 1655C91222EF16520045B9A0 /* Components */;
 			targetProxy = 1655C91822EF16520045B9A0 /* PBXContainerItemProxy */;
-		};
-		1655C92B22EF2CAD0045B9A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1655C90422EF15FA0045B9A0 /* ImageCon */;
-			targetProxy = 1655C92A22EF2CAD0045B9A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -548,30 +469,6 @@
 			};
 			name = Release;
 		};
-		1655C90C22EF15FA0045B9A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HZQ256W5V3;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1655C90D22EF15FA0045B9A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HZQ256W5V3;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		1655C91D22EF16520045B9A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -646,15 +543,6 @@
 			buildConfigurations = (
 				1655C8FF22EF15D80045B9A0 /* Debug */,
 				1655C90022EF15D80045B9A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1655C90B22EF15FA0045B9A0 /* Build configuration list for PBXNativeTarget "ImageCon" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1655C90C22EF15FA0045B9A0 /* Debug */,
-				1655C90D22EF15FA0045B9A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
