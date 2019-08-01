@@ -9,10 +9,8 @@
 import SwiftUI
 
 public struct TrackRowCell : View {
-    public var img: Image
-    public init(img: Image) {
-        self.img = img
-    }
+    let image = ("A" as NSString).image(attributes: [.font: UIFont.systemFont(ofSize: 20)], size: CGSize(width: 16, height: 16))
+
     public var body: some View {
         HStack {
             Image(systemName: "book")
@@ -20,7 +18,7 @@ public struct TrackRowCell : View {
                 Text("三線の花").font(.title)
                 Text("BEGIN").font(.subheadline)
             }
-            img
+            Image(uiImage: self.image!)
         }
     }
 }
@@ -28,7 +26,7 @@ public struct TrackRowCell : View {
 #if DEBUG
 struct TrackRowCell_Previews : PreviewProvider {
     static var previews: some View {
-        TrackRowCell(img: Image(systemName: "icloud"))
+        TrackRowCell()
     }
 }
 #endif

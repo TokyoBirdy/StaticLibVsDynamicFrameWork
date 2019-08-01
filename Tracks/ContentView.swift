@@ -7,14 +7,13 @@
 //
 
 import SwiftUI
-import Components
-import ComponentsObjC
+
 
 struct ContentView : View {
-    let image = ("A" as NSString).image(attributes: [.font: UIFont.systemFont(ofSize: 20)], size: CGSize(width: 16, height: 16)) 
+   
     var body: some View {
         List(0...10) {_ in
-            TrackRowCell(img:Image(uiImage: self.image!))
+            TrackRowCell())
         }
     }
 }

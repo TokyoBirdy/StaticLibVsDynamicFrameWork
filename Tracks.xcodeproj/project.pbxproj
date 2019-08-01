@@ -13,11 +13,12 @@
 		1655C8F422EF15D80045B9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1655C8F322EF15D80045B9A0 /* Assets.xcassets */; };
 		1655C8F722EF15D80045B9A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1655C8F622EF15D80045B9A0 /* Preview Assets.xcassets */; };
 		1655C8FA22EF15D80045B9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1655C8F822EF15D80045B9A0 /* LaunchScreen.storyboard */; };
-		1655C91722EF16520045B9A0 /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655C91522EF16520045B9A0 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1655C91A22EF16520045B9A0 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1655C91322EF16520045B9A0 /* Components.framework */; };
 		1655C91B22EF16520045B9A0 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1655C91322EF16520045B9A0 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1655C92122EF16720045B9A0 /* TrackRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655C92022EF16720045B9A0 /* TrackRowCell.swift */; };
 		16FCCF6522F31566000CD4DD /* NSString+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655C92622EF26DE0045B9A0 /* NSString+Image.m */; };
+		16FCCF6F22F320B9000CD4DD /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655C91522EF16520045B9A0 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16FCCF7122F320E4000CD4DD /* NSString+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655C92522EF26DE0045B9A0 /* NSString+Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,7 +166,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1655C91722EF16520045B9A0 /* Components.h in Headers */,
+				16FCCF6F22F320B9000CD4DD /* Components.h in Headers */,
+				16FCCF7122F320E4000CD4DD /* NSString+Image.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
