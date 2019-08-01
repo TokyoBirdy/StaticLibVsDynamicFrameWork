@@ -7,9 +7,11 @@
 //
 
 import SwiftUI
+import ColorToken
 
 public struct TrackRowCell : View {
-    let image = ("A" as NSString).image(attributes: [.font: UIFont.systemFont(ofSize: 20)], size: CGSize(width: 16, height: 16))
+
+    let image = ("A" as NSString).image(attributes: [.font: UIFont.systemFont(ofSize: 20), .foregroundColor: ColorToken.桜色], size: CGSize(width: 16, height: 16))
 
     public var body: some View {
         HStack {

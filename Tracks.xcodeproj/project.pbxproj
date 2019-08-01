@@ -19,6 +19,8 @@
 		16FCCF6522F31566000CD4DD /* NSString+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655C92622EF26DE0045B9A0 /* NSString+Image.m */; };
 		16FCCF6F22F320B9000CD4DD /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655C91522EF16520045B9A0 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16FCCF7122F320E4000CD4DD /* NSString+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655C92522EF26DE0045B9A0 /* NSString+Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16FCCF8422F325B9000CD4DD /* ColorToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCCF8322F325B9000CD4DD /* ColorToken.swift */; };
+		16FCCF8F22F34279000CD4DD /* libColorToken.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCCF8122F325B9000CD4DD /* libColorToken.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1655C91222EF16520045B9A0;
 			remoteInfo = Components;
+		};
+		16FCCF9022F34279000CD4DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1655C8E222EF15D70045B9A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FCCF8022F325B9000CD4DD;
+			remoteInfo = ColorToken;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,6 +50,15 @@
 				1655C91B22EF16520045B9A0 /* Components.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FCCF7F22F325B9000CD4DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -61,6 +79,8 @@
 		1655C92522EF26DE0045B9A0 /* NSString+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Image.h"; sourceTree = "<group>"; };
 		1655C92622EF26DE0045B9A0 /* NSString+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Image.m"; sourceTree = "<group>"; };
 		1655C92F22EF2D1A0045B9A0 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		16FCCF8122F325B9000CD4DD /* libColorToken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libColorToken.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FCCF8322F325B9000CD4DD /* ColorToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FCCF8F22F34279000CD4DD /* libColorToken.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FCCF7E22F325B9000CD4DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +116,7 @@
 				1655C92E22EF2CF90045B9A0 /* Wrapper */,
 				1655C8EC22EF15D70045B9A0 /* Tracks */,
 				1655C91422EF16520045B9A0 /* Components */,
+				16FCCF8222F325B9000CD4DD /* ColorToken */,
 				1655C8EB22EF15D70045B9A0 /* Products */,
 				1655C92822EF2CAD0045B9A0 /* Frameworks */,
 			);
@@ -98,6 +127,7 @@
 			children = (
 				1655C8EA22EF15D70045B9A0 /* Tracks.app */,
 				1655C91322EF16520045B9A0 /* Components.framework */,
+				16FCCF8122F325B9000CD4DD /* libColorToken.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +189,14 @@
 			path = include;
 			sourceTree = "<group>";
 		};
+		16FCCF8222F325B9000CD4DD /* ColorToken */ = {
+			isa = PBXGroup;
+			children = (
+				16FCCF8322F325B9000CD4DD /* ColorToken.swift */,
+			);
+			path = ColorToken;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -205,11 +243,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				16FCCF9122F34279000CD4DD /* PBXTargetDependency */,
 			);
 			name = Components;
 			productName = Components;
 			productReference = 1655C91322EF16520045B9A0 /* Components.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		16FCCF8022F325B9000CD4DD /* ColorToken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FCCF8522F325B9000CD4DD /* Build configuration list for PBXNativeTarget "ColorToken" */;
+			buildPhases = (
+				16FCCF7D22F325B9000CD4DD /* Sources */,
+				16FCCF7E22F325B9000CD4DD /* Frameworks */,
+				16FCCF7F22F325B9000CD4DD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorToken;
+			productName = ColorToken;
+			productReference = 16FCCF8122F325B9000CD4DD /* libColorToken.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -228,6 +284,9 @@
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
 					};
+					16FCCF8022F325B9000CD4DD = {
+						CreatedOnToolsVersion = 11.0;
+					};
 				};
 			};
 			buildConfigurationList = 1655C8E522EF15D70045B9A0 /* Build configuration list for PBXProject "Tracks" */;
@@ -245,6 +304,7 @@
 			targets = (
 				1655C8E922EF15D70045B9A0 /* Tracks */,
 				1655C91222EF16520045B9A0 /* Components */,
+				16FCCF8022F325B9000CD4DD /* ColorToken */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16FCCF7D22F325B9000CD4DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FCCF8422F325B9000CD4DD /* ColorToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +364,11 @@
 			isa = PBXTargetDependency;
 			target = 1655C91222EF16520045B9A0 /* Components */;
 			targetProxy = 1655C91822EF16520045B9A0 /* PBXContainerItemProxy */;
+		};
+		16FCCF9122F34279000CD4DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16FCCF8022F325B9000CD4DD /* ColorToken */;
+			targetProxy = 16FCCF9022F34279000CD4DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -528,6 +601,32 @@
 			};
 			name = Release;
 		};
+		16FCCF8622F325B9000CD4DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZQ256W5V3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16FCCF8722F325B9000CD4DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZQ256W5V3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,6 +653,15 @@
 			buildConfigurations = (
 				1655C91D22EF16520045B9A0 /* Debug */,
 				1655C91E22EF16520045B9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16FCCF8522F325B9000CD4DD /* Build configuration list for PBXNativeTarget "ColorToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FCCF8622F325B9000CD4DD /* Debug */,
+				16FCCF8722F325B9000CD4DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
